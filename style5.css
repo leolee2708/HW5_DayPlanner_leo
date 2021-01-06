@@ -20,11 +20,18 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid rgb(138, 132, 132);
 }
-code {
-  color:yellow;
-
+.code {
+color: whitesmoke;
 }
-
+.code1 {
+  color: gray;
+}
+.code2 {
+  color: red;
+}
+.code3 {
+  color: greenyellow;
+}
 .description{
   white-space: pre-wrap;
 }

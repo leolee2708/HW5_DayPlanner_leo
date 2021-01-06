@@ -1,12 +1,12 @@
-var hour9 = $("#9");
-var hour10 = $("#10");
-var hour11 = $("#11");
-var hour12 = $("#12");
-var hour1 = $("#13");
-var hour2 = $("#14");
-var hour3 = $("#15");
-var hour4 = $("#16");
-var hour5 = $("#17");
+var hour9Am = $("#9");
+var hour10Am = $("#10");
+var hour11Am = $("#11");
+var hour12Pm = $("#12");
+var hour1Pm = $("#13");
+var hour2Pm = $("#14");
+var hour3Pm = $("#15");
+var hour4Pm = $("#16");
+var hour5Pm = $("#17");
 var time = moment();
 
 function setPlanner() {
@@ -36,6 +36,9 @@ saveBttn.on("click", function () {
 
 function pastPresentFuture() {
     hour = time.hours();
+    // if you want to test the function if its running outside of time frame (9-5)
+    //just add -5/-10 like this:
+    // hour =  time.hours() -5 or -10; 
     $(".time-block").each(function () {
         var thisHour = parseInt($(this).attr("id"));
 
